@@ -2,6 +2,14 @@ body, html {
     font-family: 'Montserrat', sans-serif;
 }
 
+li {
+    list-style-type: none;
+}
+ ul {
+    margin: 0;
+    padding: 0;
+}
+
 button {
     margin: 0;
     padding: 0;
@@ -30,6 +38,9 @@ button {
     margin-right: 98px;
     margin-left: 98px;
 }
+
+
+/*Header*/
 
 .header {
     padding-top: 62px;
@@ -85,6 +96,8 @@ button {
     cursor: pointer;
 }
 
+/*Тех слайдера*/
+
 .text-tag {
     font-size:18px;
     font-weight: bold;
@@ -92,21 +105,14 @@ button {
     margin-bottom: 22px;
 }
 
-.slide-tag-head {
-    color:#43A047;
-}
-
 .title {
     font-size: 62px;
     font-weight: 100;
-
+    line-height: 72px;
     margin-top: 0;
     margin-bottom: 34px;
 }
 
-.title-slide {
-    color:#212121;
-}
 
 .text {
     color:#6C6C6C;
@@ -116,6 +122,15 @@ button {
     margin-bottom: 48px;
     width: 40%;
     
+}
+
+
+.slide-tag-head {
+    color:#43A047;
+}
+
+.title-slide {
+    color:#212121;
 }
 
 .button-orders {
@@ -239,6 +254,8 @@ button {
     height: 100%;
 }
 
+/*Блок при наведении на товар*/
+
 .featured-good-hover {
     /*Скрытие блока пдсказки*/
     visibility: hidden;
@@ -288,6 +305,8 @@ button {
     margin: 0 auto;
 }
 
+/*Промо*/
+
 .promo {
     display: flex;
     justify-content: flex-start;
@@ -335,6 +354,8 @@ button {
     width: 60%;
 }
 
+/*Трендинговые продукты*/
+
 .head-trending-product {
     display: flex;
     justify-content: space-between;
@@ -355,6 +376,8 @@ button {
     flex-wrap: wrap;
     margin-bottom: 90px;
 }
+
+/*Слайдер*/
 
 .slider-main  {
     display: flex;
@@ -414,4 +437,130 @@ button {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+
+/*phone-app*/
+
+.phone-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 516px;
+    background:url(../img/back_phone.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.content-phone-app {
+    width: 45%;
+}
+
+.phone-app-tag {
+    color: #6c6c6c;
+}
+
+.phone-app-title {
+    margin-bottom: 26px;
+}
+
+.phone-app-text {
+    width: 95%;
+    margin-bottom: 33px;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #f7f7f7;
+}
+
+.content-footer{
+    height: 100%;
+    padding-top: 120px;
+    padding-bottom: 39px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.fotter-info-title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #6c6c6c;
+    margin-bottom: 24px;
+}
+
+.footer-contact {
+    flex-basis: 20%;
+}
+
+.contact-item {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #212121;
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-use-info {
+    flex-basis: 35%;
+}
+
+.info-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.info-link:hover {
+    border-bottom: 1px solid #212121;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comunication-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #212121;
+    margin-bottom: 26px;
+}
+
+.communication-email {
+    padding: 17px 0px 17px 19px;
+    width: 90%;
+    background-color: #ffffff;
+    border: 1.0px solid #d9dee1;
+}
+
+.footer-communication {
+    flex-basis: 35%;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.general-info {
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #6c6c6c;
+    margin: 0;
 }
