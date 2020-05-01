@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iterior Home</title>
+    <title>INTERIOR Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
@@ -13,13 +13,13 @@
         <section class="slider slider-header">
             <div class="content">
                 <header class="header">
-                    <a href="#" class="logo"><img src="img/logo.svg" alt="Logo"></a>
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo"></a>
                     <menu class = "menu">
                         <a class = "menu-item active-menu" href="#">HOME</a>
                         <a class = "menu-item" href="#">PRODUCTS</a>
                         <a class = "menu-item" href="#">HISTORY</a>
                         <a class = "menu-item" href="#">SHOWROON</a>
-                        <a class = "menu-item" href="#">CONTACT</a>
+                        <a class = "menu-item" href="contact.html">CONTACT</a>
                     </menu>
                     <button class = "menu-search"><img src="img/search.svg" alt="Search"></button>
                 </header>
@@ -322,7 +322,13 @@
                         <p class="comunication-text">Suscribe to know about our latest news,
                              products and special offers just for suscribers.
                         </p>
-                        <input type="email" class="communication-email" placeholder="your email address">
+                        <form class = "form" action="">
+                            <input class="communication-email" placeholder="your email address" required pattern="^[-_\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+                            <button class = "submit-email" type="submit">
+                                <img src="img/icon_message.png" alt="message">
+                            </button>
+                        </form>
+
                     </div>
                 </div>
 
