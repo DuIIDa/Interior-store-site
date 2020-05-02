@@ -39,6 +39,8 @@ button {
 }
 
 .content {
+    /*max-width: 1366px;
+    margin: 0 auto;*/
     margin-right: 98px;
     margin-left: 98px;
 }
@@ -395,9 +397,9 @@ button {
     color: #e53935;
 }
 
-/*Продукты!!!!*/
+/*////////////////products-exluseve//////////////////*/
 
-.products {
+.products-exluseve {
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
@@ -754,7 +756,14 @@ button {
     background-color: white;
 }
 
+.refreh-img {
+    transition: transform .8s ease-in-out;
+}
 
+.refreh-img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
 .promo-products {
     margin-bottom: 0;
 }
