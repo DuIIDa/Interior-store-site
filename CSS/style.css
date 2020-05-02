@@ -22,7 +22,7 @@ button {
 .container {
     /*max-width: 100%;*/
     max-width: 1366px;
-    /*min-width: 1100px;*/
+    min-width: 1100px;
    
     margin: 0 auto;
 }
@@ -678,4 +678,83 @@ button {
     line-height: 20px;
     font-weight: 700;
     color: #6c6c6c;
+}
+
+
+/*////////////////Products/////////////////////*/
+
+.products-box {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 140px;
+}
+
+/*Создание нижней линии с регулируемым размером*/
+.products-menu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(transparent 10%, #fff 50%);
+    /*border-bottom: 1px solid #6C6C6C;*/
+    position: relative;
+}
+
+.products-menu:before, .products-menu:after {
+    content: '';
+    background: #000;
+    position: absolute;
+}
+
+.products-menu:after {
+    bottom: 0px;
+    left: 0px;
+    right: 390px;
+    height: 1px;
+}
+
+.products-menu-item {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6c6c6c;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 21px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s ease;  
+}
+
+.products-menu-item:hover {
+    color:#212121;
+}
+
+.active-products-menu {
+    color:#212121;
+    border-bottom: 2px solid #212121;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 71px;
+}
+
+.refreh-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+
+.promo-products {
+    margin-bottom: 0;
 }
