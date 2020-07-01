@@ -446,7 +446,7 @@ button:focus {
 }
 
 .product-images {
-    flex-basis: 50%;
+    flex-basis: 60%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
